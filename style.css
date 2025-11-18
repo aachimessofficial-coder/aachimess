@@ -1,0 +1,35 @@
+.hero-banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Hide mobile banner by default */
+.banner.mobile {
+  display: none;
+}
+
+/* Make image full width */
+.banner {
+  width: 100%;
+  height: auto;
+}
+
+/* Show desktop banner for large screens */
+@media (min-width: 768px) {
+  .banner.desktop {
+    display: block;
+  }
+  .banner.mobile {
+    display: none;
+  }
+}
+
+/* Show mobile banner for small screens */
+@media (max-width: 767px) {
+  .banner.desktop {
+    display: none;
+  }
+  .banner.mobile {
+    display: block;
+  }
+}
